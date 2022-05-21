@@ -1,0 +1,156 @@
+.div1{
+  display: flex;
+  border: 5px solid #1c4e80;
+  width: 75%;
+  margin: auto;
+  background-color: white;
+  /*font-family: Arial, Helvetica, sans-serif;*/
+  justify-content: center;
+  align-items: center;
+}
+
+
+.namekawa{
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #1c4e80  ;
+  font-size: 60px;
+  text-align: center;
+ /* width: 35%;*/
+ /*dfjdhfj*/
+}
+
+.material-icons{
+  vertical-align: text-bottom;
+}
+body {
+  background-color:  #333;;
+  /*font-family: Arial, Helvetica, sans-serif;*/
+  color:rgb(219, 219, 214)
+}
+
+.photo1 {
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 200px;
+    text-align:center;  
+    box-shadow: 0 0 8px 8px black inset;
+    border-radius: 50%;
+    border: 5px solid #1c4e80;
+  }
+
+  img:hover {
+    box-shadow: 0 0 20px;;
+  }
+
+
+
+
+  .c-site-header {
+    padding: 60px;
+    text-align: center;
+    background: #00719c;
+    color: white;
+    font-size: 30px;
+  }
+
+  nav {
+    z-index: 2;
+    padding: 30px;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: left;
+    /*border-bottom: #00415a 5px solid;*/
+    font-size: 30px;
+}
+
+a{
+  color: rgb(0, 0, 0);
+}
+
+a:hover{
+  color: red;
+}
+
+p{
+  text-align: justify;
+  font-size: 20px;
+}
+
+.allpar{
+width: 73%;
+border: 5px solid #1c4e80;
+padding: 1%;
+margin: auto;
+/*margin-top: 30px;*/
+background-color: white;
+color: black;
+
+}
+
+
+
+
+.navbar {
+  overflow: hidden;
+  background-color: #1c4e80; 
+  width: 75%;
+  margin: auto;
+  border: 5px solid #1c4e80;
+
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.subnav {
+  float: left;
+  overflow: hidden;
+}
+
+.subnav .subnavbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .subnav:hover .subnavbtn {
+  background-color: red;
+}
+
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: red;
+  width: 100%;
+  z-index: 1;
+}
+
+.subnav-content a {
+  float: left;
+  color: white;
+  text-decoration: none;
+}
+
+.subnav-content a:hover {
+  background-color: #eee;
+  color: black;
+}
+
+.subnav:hover .subnav-content {
+  display: block;
+}
