@@ -9,6 +9,14 @@
   align-items: center;
 }
 
+.div2{
+
+  width: 40%;
+  color:rgb(0, 0, 0);
+  justify-content: center;
+  align-items: center;
+
+}
 
 .namekawa{
   margin-left: 20px;
@@ -18,8 +26,6 @@
   font-size: 60px;
   text-align: center;
  /* width: 35%;*/
- /*dfjdhfj*/
- /*ttet*/
 }
 
 .material-icons{
@@ -113,34 +119,37 @@ color: black;
 }
 
 .subnav {
-  float: left;
-  overflow: hidden;
+ float: left;
+  /*overflow: hidden;*/
+  /*margin: auto;*/
 }
 
 .subnav .subnavbtn {
   font-size: 16px;  
-  border: none;
-  outline: none;
+  border: 5px;
+  outline: soild;
   color: white;
   padding: 14px 16px;
   background-color: inherit;
   font-family: inherit;
-  margin: 0;
+  /*margin: auto;*/
 }
 
 .navbar a:hover, .subnav:hover .subnavbtn {
-  background-color: red;
+  background-color: #476d94;
 }
 
 .subnav-content {
   display: none;
-  position: absolute;
-  left: 0;
-  background-color: red;
-  width: 100%;
+  /*position: relative;*/
+  background-color: #77c231;
   z-index: 1;
 }
 
+
+  ul {
+    list-style-type: none;
+}
 .subnav-content a {
   float: left;
   color: white;
