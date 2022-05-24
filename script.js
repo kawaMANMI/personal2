@@ -1,51 +1,106 @@
-var array_earning, array_expense, total;
+var count, image_item, choose;
 
-function getNumberOrString(value) {
-  // Convert a string value to a number if possible
-  let number_value = Number(value);
-  if (Number.isNaN(number_value)) {
-    return value
-  } else {
-    return number_value
+// Describe this function...
+function Animal_fun() {
+  if(--window.LoopTrap <= 0) throw "Infinite loop.";
+  if (count == 0) {
+    image_item = 'https://github.com/kawaMANMI/portfolio/blob/main/images/Animals/A1.jpg?raw=true';
+  }
+  if (count == 1) {
+    image_item = 'https://github.com/kawaMANMI/portfolio/blob/main/images/Animals/A2.jpg?raw=true';
+  }
+  if (count == 2) {
+    image_item = 'https://github.com/kawaMANMI/portfolio/blob/main/images/Animals/A3.jpg?raw=true';
+  }
+  if (count == 3) {
+    image_item = 'https://github.com/kawaMANMI/portfolio/blob/main/images/Animals/A4.jpg?raw=true';
+  }
+  if (count == 4) {
+    image_item = 'https://github.com/kawaMANMI/portfolio/blob/main/images/Animals/A5.jpg?raw=true';
+  }
+}
+
+// Describe this function...
+function Landcape_func() {
+  if(--window.LoopTrap <= 0) throw "Infinite loop.";
+  if (count == 0) {
+    image_item = 'https://github.com/kawaMANMI/portfolio/blob/main/images/landscapes/L1.jpg?raw=true';
+  }
+  if (count == 1) {
+    image_item = 'https://github.com/kawaMANMI/portfolio/blob/main/images/landscapes/L2.jpg?raw=true';
+  }
+  if (count == 2) {
+    image_item = 'https://github.com/kawaMANMI/portfolio/blob/main/images/landscapes/L3.jpg?raw=true';
+  }
+  if (count == 3) {
+    image_item = 'https://github.com/kawaMANMI/portfolio/blob/main/images/landscapes/L4.jpg?raw=true';
+  }
+  if (count == 4) {
+    image_item = 'https://github.com/kawaMANMI/portfolio/blob/main/images/landscapes/L5.jpg?raw=true';
   }
 }
 
 
-array_earning = [];
-array_expense = [];
-total = [];
+count = 0;
+Animal_fun();
+let element_image = document.getElementById('image');
+element_image.setAttribute("src", image_item);
 
 
-document.getElementById('Earning').addEventListener('click', (event) => {
-  array_earning.push(getNumberOrString(document.getElementById('input').value));
-  total.push(getNumberOrString(document.getElementById('input').value));
-  let element_list1 = document.getElementById('list1');
-  let new_li = document.createElement('li');
-  new_li.innerText = getNumberOrString(document.getElementById('input').value);
-
-  element_list1.appendChild(new_li);
-  let element_total_earning = document.getElementById('total_earning');
-  element_total_earning.innerText = array_earning.reduce((a,b) => a+b, 0);
-
-});
-0;
-
-
-document.getElementById('Expense').addEventListener('click', (event) => {
-  array_expense.push(getNumberOrString(document.getElementById('input').value));
-  total.push(getNumberOrString(document.getElementById('input').value));
-  let element_list2 = document.getElementById('list2');
-  let new_li2 = document.createElement('li');
-  new_li2.innerText = getNumberOrString(document.getElementById('input').value);
-
-  element_list2.appendChild(new_li2);
-  let element_total_expense = document.getElementById('total_expense');
-  element_total_expense.innerText = array_expense.reduce((a,b) => a+b, 0);
+document.getElementById('Animals').addEventListener('click', (event) => {
+  let element_Animals = document.getElementById('Animals');
+  element_Animals.style.backgroundColor = '#000000';
+  element_Animals.style.color = '#ffffff';
+  let element_Landscapes = document.getElementById('Landscapes');
+  element_Landscapes.style.backgroundColor = '#ffffff';
+  element_Landscapes.style.color = '#000000';
+  choose = 1;
 
 });
 
-document.getElementById('Balance').addEventListener('click', (event) => {
-  let element_total = document.getElementById('total');
-  element_total.innerText = total.reduce((a,b) => a+b, 0);
+document.getElementById('Landscapes').addEventListener('click', (event) => {
+  let element_Landscapes2 = document.getElementById('Landscapes');
+  element_Landscapes2.style.backgroundColor = '#000000';
+  element_Landscapes2.style.color = '#ffffff';
+  let element_Animals2 = document.getElementById('Animals');
+  element_Animals2.style.backgroundColor = '#ffffff';
+  element_Animals2.style.color = '#000000';
+  choose = 0;
+
+});
+
+document.getElementById('Next').addEventListener('click', (event) => {
+  if (count <= 3) {
+    count = (typeof count === 'number' ? count : 0) + 1;
+  }
+  if (count >= 4) {
+    count = 0;
+  }
+  if (choose == 1) {
+    Animal_fun();
+  }
+  if (choose == 0) {
+    Landcape_func();
+  }
+  let element_image2 = document.getElementById('image');
+  element_image2.setAttribute("src", image_item);
+
+});
+
+document.getElementById('Previous').addEventListener('click', (event) => {
+  if (count <= 4) {
+    count = (typeof count === 'number' ? count : 0) + -1;
+  }
+  if (count < 0) {
+    count = 4;
+  }
+  if (choose == 1) {
+    Animal_fun();
+  }
+  if (choose == 0) {
+    Landcape_func();
+  }
+  let element_image3 = document.getElementById('image');
+  element_image3.setAttribute("src", image_item);
 
 });

@@ -81,11 +81,213 @@
   </div>
 
  <div class="allpar">
-  <section id="projects_link">
-    <h1 style="font-size: 46px; text-align: center;"> Projects</h1>
-    <h2> CYF Project: Build an image carousel  </h2>
-  </section>   
-</div>
 
+    <center>
+    <h1 class="namekawa"> PROJECTS</h1>
+  </center> 
+
+
+
+    <div  id="Project1">
+       
+    <center> 
+    <h1> CYF Project: Build an image carousel  </h1>
+ 
+      
+    <img id="image" src=""  style="border: 10px solid #125688;  border-radius: 25px; box-shadow: 5px 5px 5px #a9a9a9;"width="400" height="300" alt="To see pictures, choose an Album">
+
+
+    <br>
+    
+    
+    <p style="font-size: 20px;" style="font-size: 20px;"> Choose the album you'd like to have a look
+    
+    <button id="Animals"  style="font-size: 20px;"> 
+         Animals
+      </button>
+    or 
+     <button id="Landscapes" style="font-size: 20px;"> 
+         Landscapes
+      </button>
+    </p>
+    
+    
+    <br>
+    <br>
+    <br>
+    <button id="Previous" class="button2"> 
+         &#9664;	
+      </button>
+    
+    
+     <button id="Next" class="button2"> 
+       &#9654; 
+      </button>
+      </center>
+
+
+
+  
+      <details class="procedure" onClick = "document.getElementById('Project1').style.height = '2000px';">
+        <summary><b> Details: Image carousel: Allow the user to cycle through two set of images </b></summary>
+        In this project we have two sets (each set contains five pictures) of pictures which are animals and landscapes.
+         We have options to show either animals or landscapes pictures in cycle. 
+        <hr>
+        <b>
+          In CYF Blocks: 
+        </b>
+        <ol>
+             <li>
+              In static HTML, we have an image tag and four buttons for <code class="code1">Animals</code>, 
+              <code class="code1">Landscapes</code>, <code class="code1">Next</code> and <code class="code1">Previous</code>. 
+              The id’s of all tags are same with their names. 
+             </li>
+
+             <li>
+              We have 7 blocks (in CYF Blocks) including click on; run, Animals, Landscapes, Next, 
+              and Previous and two functions. 
+             </li>
+             
+             <li>
+              The two functions were named Animals_fun and Lanscapes_fun. 
+              In each of this function we have two variables named count (type: integer) and image_item (type: string).  
+             </li>
+
+             <li>
+              In each function, we have five if conditions. The value of count will be between 0 to 4. 
+              For each value of the count, we set the value of  image_item as an address of one of the pictures. 
+             </li>
+
+             <li>
+                At start (when run is clicked).  
+                <ol type="i">
+                    <li>
+                      We set count as zero.  
+                    </li>
+                    <li>
+                      Calling Animals_fun. 
+                    </li>
+                    <li>
+                      We use find element with id image. 
+                    </li>
+                    <li>
+                      Set the attribute src as image_item. 
+                    </li>
+                </ol>
+             </li>
+             
+             <li>
+                When the element with id Animals is clicked 
+                <ol type="i">
+                  <li>
+                    Find the element with id Animals.   
+                  </li>
+                  <li>
+                    Set the attribute backgound to black colour.  
+                  </li>
+                  <li>
+                    Set the attribute color to white color  
+                  </li>
+                  <li>
+                    Find the element with id Landscapes. 
+                  </li>
+                  <li>
+                    Set the attribute backgound to white colour. 
+                  </li>
+                  <li>
+                    Set the attribute color to black color.
+                  </li>
+                  <li>
+                    Set the variable choose to 1. 
+
+                  </li>
+              </ol>
+             </li>
+
+             <li>
+              When the element with id Landscapes is clicked.
+
+                <ol type="i">
+                  <li>
+                    Find the element with id Landscapes. 
+                  </li>
+                  <li>
+                    Set the attribute backgound to black colour.  
+                  </li>
+                  <li>
+                    Set the attribute color to white color  
+                  </li>
+                  <li>
+                    Find the element with id Animals. 
+                  </li>
+                  <li>
+                    Set the attribute backgound to white colour. 
+                  </li>
+                  <li>
+                    Set the attribute color to black color.
+                  </li>
+                  <li>
+                    Set the variable choose to 0. 
+
+                  </li>
+              </ol>
+            </li>
+
+
+
+              <li>
+                When the element with id Next is clicked
+                <ol type="i">
+                  <li>
+                    If count &le;  4 do change count by -1  
+                  </li>
+                  <li>
+                    If count &lt; 0 set change count by 4 
+                  </li>
+                  <li>
+                    If choose = 1 do Animal_fun. 
+                  </li>
+                  <li>
+                    If choose = 0 do Landscape_func 
+                  </li>
+                  <li>
+                    Find element with id image 
+                  </li>
+                  <li>
+                    Set the attribute src to image_item. 
+                  </li>
+                </ol>
+              </li>
+        </ol>
+            
+
+
+
+
+
+
+
+When the element with id Prevous is clicked 
+
+If count $\le$  3 do change count by 1 
+
+If count $ge$ 4 set change count by 0 
+
+If choose $=$ 1 do Animal_fun. 
+
+If choose = 0 do Landscape_func 
+
+Find element with id image 
+
+And set the attribute src to image_item. 
+
+</details>
+
+
+ 
+
+</div>
+</div>
   </body>
+  <script src="script.js" ></script> 
 </html>

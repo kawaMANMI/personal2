@@ -29,7 +29,8 @@
 body {
   background-color:  #333;;
   /*font-family: Arial, Helvetica, sans-serif;*/
-  color:rgb(219, 219, 214)
+  color:rgb(219, 219, 214);
+  line-height: 1.4;
 }
 
 .photo1 {
@@ -73,7 +74,7 @@ p{
 .allpar{
 width: 73%;
 border: 5px solid #1c4e80;
-padding: 1%;
+padding: 2%;
 margin: auto;
 /*margin-top: 30px;*/
 background-color: white;
@@ -212,3 +213,27 @@ color: black;
 width: 75%;
 margin: auto;
 }
+
+#Project1{
+  width: 70%;
+  margin: auto;
+  border: 5px solid #1c4e80;
+  padding: 10px;
+  text-align: justify;
+  font-family: 'Arial Narrow', Arial, sans-serif;
+}
+
+.button2{
+  font-size: 25px;
+  height:35px; 
+  width: 35px; 
+  }
+
+  .procedure{
+    font-size: 16px;
+  }
+
+  .code1{
+    color: rgb(88, 88, 88);
+    font-family: 'Droid Sans Mono', 'monospace', monospace;
+  }
