@@ -11,7 +11,7 @@
 </head>
 
 <header>
-  <div class="div1">
+  <div class="div1" id="div1">
     <img 
      src="https://avatars.githubusercontent.com/u/39382602?v=4"
      class="photo1">
@@ -31,12 +31,12 @@
   <div class="subnav">
     <button class="subnavbtn">Projects&#9660;</button>
     <div class="subnav-content">
-      <a href="#CYF_Blocks">CYF Blocks</a>
+      <a href="#cyf_block1">CYF Blocks</a>
       <a href="#Puzzles">Puzzles</a>
       <a href="#Data_Analysis">Data Analysis</a>
     </div>
   </div>
-    <a href="#Work Experince">Work Experince</a>
+    <a href="#Work Experince">Work Experience</a>
     <a href="#Documents">Documents</a>
 </div>
 
@@ -53,11 +53,21 @@
   </p>
   
   <p class="about_me">
-    Currently, attending Software Development Course with Code Your Future (CYF) after finishing The Intro to Digital Course (20-40) hours and three weeks of preparation for the Software Development Course. By taking advantage of my 15 years in teaching and researching at universities and with recently completed Bootcamps in Data Analysis and Data Science; I would like to become a successful and innovated full-Stack web developer. 
+    Currently, attending Software Development Course (One full day, each Saturday, for 8 months ) with Code Your Future (<a href="https://codeyourfuture.io/">CYF</a>) 
+    after completeing 
+    The Intro to Digital Course (20-40) hours and four weeks of preparation for the Software Development Course. 
+    By taking advantage of my 15 years  experience in teaching and researching at universities and with recently completed 
+    Bootcamps in Data Analysis and Data Science; I would like to become a creative and an innovative full-Stack web 
+    developer. 
   </p>
    
   <p class="about_me">
-  Highly driven, motivated, dynamic, and analytical data professional. Participated in Tech Talent Academy’s Data Academy programme learning and developing Python fundamentals, including key data science libraries such as Numpy, Pandas, SciKit, and Tensorflow. In addition to this I am gained a solid grounding in machine learning algorithms, relational database management (SQL), data visualisation/business intelligence packages such as PowerBI, and R programming language. I am a keen and adaptable worker looking for entry level data science, data analysis or developer positions that will utilise this skillset. 
+    Highly driven, motivated, dynamic, and analytical data professional. Participated in Tech Talent Academy’s 
+    Data Academy programme learning and developing Python fundamentals, including key data science libraries 
+    such as Numpy, Pandas, SciKit, and Tensorflow. In addition to this I am gained a solid grounding in machine 
+    learning algorithms, relational database management (SQL), data visualisation/business intelligence packages 
+    such as PowerBI, and R programming language. I am a keen and adaptable worker looking for entry level data science,
+    data analysis or developer positions that will utilise this skillset. 
   </p>
 
 
@@ -78,7 +88,9 @@
     <br>
     - I have curiosity for solving technical challenges and building projects from ideation to execution.
   </p>
+  <a href="#div1" style="text-align: center;">Back to Home</a>
   </div>
+  
 
  <div class="allpar">
 
@@ -113,8 +125,7 @@
     
     
     <br>
-    <br>
-    <br>
+
     <button id="Previous" class="button2"> 
          &#9664;	
       </button>
@@ -127,14 +138,17 @@
 
 
 
-  
+      <br>
+
+
+      <span id="cyf_block1"></span>
       <details class="procedure" onClick = "document.getElementById('Project1').style.height = '2000px';">
         <summary><b> Details: Image carousel: Allow the user to cycle through two set of images </b></summary>
         In this project we have two sets (each set contains five pictures) of pictures which are animals and landscapes.
          We have options to show either animals or landscapes pictures in cycle. 
         <hr>
         <b>
-          In CYF Blocks: 
+         In CYF Blocks: 
         </b>
         <ol>
              <li>
@@ -149,38 +163,40 @@
              </li>
              
              <li>
-              The two functions were named Animals_fun and Lanscapes_fun. 
-              In each of this function we have two variables named count (type: integer) and image_item (type: string).  
+              The two functions were named <code class="code1"> Animals_fun  </code> and <code class="code1">  
+                 Lanscapes_fun </code>. 
+              In each of this function we have two variables named <code class="code1">  count  </code> 
+              (type: integer) and <code class="code1"> image_item </code>(type: string).  
              </li>
 
              <li>
-              In each function, we have five if conditions. The value of count will be between 0 to 4. 
-              For each value of the count, we set the value of  image_item as an address of one of the pictures. 
+              In each function, we have five <b> if conditions</b>. The value of <code class="code1"> count </code> will be between 0 to 4. 
+              For each value of the <code class="code1"> count </code>, we set the value of  <code class="code1"> image_item </code> as an web address of one of the pictures. 
              </li>
 
              <li>
                 At start (when run is clicked).  
                 <ol type="i">
                     <li>
-                      We set count as zero.  
+                      We set <code class="code1"> count </code> as zero.  
                     </li>
                     <li>
-                      Calling Animals_fun. 
+                      Calling <code class="code1"> Animals_fun  </code>. 
                     </li>
                     <li>
-                      We use find element with id image. 
+                      We use find element with id <code class="code1"> image  </code> . 
                     </li>
                     <li>
-                      Set the attribute src as image_item. 
+                      Set the attribute src as <code class="code1"> image_item  </code>. 
                     </li>
                 </ol>
              </li>
              
              <li>
-                When the element with id Animals is clicked 
+                When the element with id <code class="code1"> Animals  </code>  is clicked 
                 <ol type="i">
                   <li>
-                    Find the element with id Animals.   
+                    Find the element with id <code class="code1"> Animals  </code>.   
                   </li>
                   <li>
                     Set the attribute backgound to black colour.  
@@ -189,7 +205,7 @@
                     Set the attribute color to white color  
                   </li>
                   <li>
-                    Find the element with id Landscapes. 
+                    Find the element with id <code class="code1"> Landscapes  </code>. 
                   </li>
                   <li>
                     Set the attribute backgound to white colour. 
@@ -198,18 +214,18 @@
                     Set the attribute color to black color.
                   </li>
                   <li>
-                    Set the variable choose to 1. 
+                    Set the variable <code class="code1"> choose </code> to 1. 
 
                   </li>
               </ol>
              </li>
 
              <li>
-              When the element with id Landscapes is clicked.
+              When the element with id <code class="code1"> Landscapes  </code> is clicked.
 
                 <ol type="i">
                   <li>
-                    Find the element with id Landscapes. 
+                    Find the element with id <code class="code1"> Landscapes  </code>. 
                   </li>
                   <li>
                     Set the attribute backgound to black colour.  
@@ -218,7 +234,7 @@
                     Set the attribute color to white color  
                   </li>
                   <li>
-                    Find the element with id Animals. 
+                    Find the element with id <code class="code1"> Animals  </code>. 
                   </li>
                   <li>
                     Set the attribute backgound to white colour. 
@@ -227,7 +243,7 @@
                     Set the attribute color to black color.
                   </li>
                   <li>
-                    Set the variable choose to 0. 
+                    Set the variable <code class="code1">choose</code> to 0. 
 
                   </li>
               </ol>
@@ -239,50 +255,55 @@
                 When the element with id Next is clicked
                 <ol type="i">
                   <li>
-                    If count &le;  4 do change count by -1  
+                    If <code class="code1">count </code> &le;  4 do change <code class="code1">count</code>  by -1  
                   </li>
                   <li>
-                    If count &lt; 0 set change count by 4 
+                    If <code class="code1">count </code> &lt; 0 set  <code class="code1">count</code> to 4 
                   </li>
                   <li>
-                    If choose = 1 do Animal_fun. 
+                    If <code class="code1">choose </code>  = 1 do <code class="code1">Animal_fun</code>. 
                   </li>
                   <li>
-                    If choose = 0 do Landscape_func 
+                    If <code class="code1">choose </code>  = 0 do <code class="code1">Landscape_fun</code>. 
                   </li>
                   <li>
-                    Find element with id image 
+                    Find element with id <code class="code1">image </code>  
                   </li>
                   <li>
-                    Set the attribute src to image_item. 
+                    Set the attribute src to <code class="code1">image_item </code>. 
                   </li>
                 </ol>
               </li>
-        </ol>
+
+
+              <li>
+                When the element with id <code class="code1">Previous </code>  is clicked 
+                <ol type="i">
+                  <li>
+                    If <code class="code1">count </code> &le;  3 do change <code class="code1">count</code> by -1  
+                  </li>
+                  <li>
+                    If <code class="code1">count </code> &ge; 4 set  <code class="code1">count</code> to 0 
+                  </li>
+                  <li>
+                    If <code class="code1">choose </code>= 1 do <code class="code1">Animal_fun</code>. 
+                  </li>
+                  <li>
+                    If  = 0 do L<code class="code1">Landscape_fun </code> 
+                  </li>
+                  <li>
+                    Find element with id <code class="code1">image </code> 
+                  </li>
+                  <li>
+                    Set the attribute src to <code class="code1">image_item </code>. 
+                  </li>
+                </ol>
+              </li>
             
 
-
-
-
-
-
-
-When the element with id Prevous is clicked 
-
-If count $\le$  3 do change count by 1 
-
-If count $ge$ 4 set change count by 0 
-
-If choose $=$ 1 do Animal_fun. 
-
-If choose = 0 do Landscape_func 
-
-Find element with id image 
-
-And set the attribute src to image_item. 
-
 </details>
-
+<br>
+ <a href="#div1" style="text-align: center;">Back to Home</a>
 
  
 
