@@ -6,7 +6,7 @@
   background-color: white;
   /*font-family: Arial, Helvetica, sans-serif;*/
   justify-content: center;
-  align-items: center;
+  align-items: left;
 }
 
 .div2{
@@ -39,17 +39,29 @@ body {
     margin-bottom: 20px;
     width: 200px;
     text-align:center;  
-    box-shadow: 0 0 8px 8px black inset;
+    /*box-shadow: 0 0 8px 8px black inset;*/
     border-radius: 50%;
-    border: 5px solid #1c4e80;
+    /*border: 10px solid #6a83d4;*/
+    z-index: 1;
   }
 
   img:hover {
-    box-shadow: 0 0 20px;;
+    box-shadow:
+    0 0 0 8px hsl(205, 98%, 20%),
+    0 0 0 16px hsl(205, 50%, 58%),
+    0 0 0 24px hsl(205, 57%, 75%);
   }
 
 
 
+
+
+  .blur {
+    box-shadow:
+      0 0 0 7px hsl(205, 98%, 20%),
+      0 0 0 14px hsl(205, 50%, 58%),
+      0 0 0 21px hsl(205, 57%, 75%);
+  }
 
 
 

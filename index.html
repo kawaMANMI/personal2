@@ -12,9 +12,11 @@
 
 <header>
   <div class="div1" id="div1">
+    <div style="transform: translateY(-10%); margin: 0px;color: #1c4e80; text-align: left; font-size: 25px;">
+      <h1 > Hi! this is:</h1></div>
     <img 
      src="https://avatars.githubusercontent.com/u/39382602?v=4"
-     class="photo1">
+     class="photo1 blur">
      
      <div class="div2">
        <h1 class="namekawa"> KAWA MANMI  </h1> 
@@ -45,6 +47,7 @@
         <a href="#Certificates">Certificates</a>
       </div>
     </div>
+    <a href="#ContactMe">Contact Me</a>
 </div>
 
 
@@ -60,11 +63,10 @@
   </p>
   
   <p class="about_me">
-    Currently, attending Software Development Course (One full day, each Saturday, for 8 months) with Code Your Future (<a href="https://codeyourfuture.io/">CYF</a>) 
-    after completeing 
-    The Intro to Digital Course (20-40) hours and four weeks of preparation for the Software Development Course. 
+   My name is Kawa Manmi and thank you for checking out my web page!. I am currently attending Software Development Course (One full day, each Saturday, for 8 months) with Code Your Future (<a href="https://codeyourfuture.io/">CYF</a>) 
+    after completeing "The Intro to Digital Course (20-40) hours" and four weeks of preparation for the Software Development Course. 
     By taking advantage of my 15 years  experience in teaching and researching at universities and with recently completed 
-    Bootcamps in Data Analysis and Data Science; I would like to become a creative and an innovative full-Stack web 
+    Bootcamps in Data Analysis and Data Science; I would like to be  a creative and an innovative full-Stack web 
     developer. 
   </p>
    
@@ -81,6 +83,7 @@
   <p class="about_me">
     I have also completed a 12-week Bootcamp course (Dec 2021 - Mar 2022) in Analysing Data, a Skills Bootcamp delivered via Babington. Through attendance on programme, involved 135 hours of study both via instructor lead training & self-directed learning, I have developed a level 3 equivalent skill set across data literacy, understanding data driven software: Excel, PowerBI, analysing & interpreting data and presenting data. After completion I obtained certification via uCertify Excel 2019 certification, covering: manage workbook options and settings, manage and format data, create advanced formulas and macros and manage advanced charts and tables.
   </p>
+  <!--
   <p class="about_me">
     In academia: 
     I completed PhD in Applied Mathematics from the University of Birmingham in 2015. I have experience in academia including lecturing mathematical and computer programming modules, researching and supervising particularly in numerical modelling fluid dynamics (using Boundary Integral Method, Finite Element Analysis and Finite Volume Method). I have a passion also for computer coding in number of scientific computer language.
@@ -90,6 +93,7 @@
     Through my Master study in 2005-2007, I have studied some numerical methods for solving integral equations and achieved some knowledge in integral equations. From 2007 to2008, I had some investigation on high order numerical methods for solving nonlinear equations. During My PhD study in 2011-2015, I completed some taught courses such as continuum mechanics, Viscous Fluid Mechanics with Applications, PDEs and Reaction-Diffusion Systems in Chemistry and Biology to build up my PhD research background. Then, I started to Model bubble dynamics numerically using boundary integral method in three-dimensional spaces. Some papers have been published on this subject. I believe I have a good ability in computer coding. I have experience in computer languages such as Matlab, Python, Visual Basic, C++ and Fortran.
   </p>
   <br>
+  -->
   <p>
     - I am always able to learn and implement new technologies.
     <br>
@@ -311,10 +315,49 @@
 </details>
 <br>
  <a href="#div1" style="text-align: center;">Back to Home</a>
-
- 
-
 </div>
+</div>
+
+
+
+<link href="contact-form.css" rel="stylesheet">
+
+<div class="fcf-body" id="ContactMe">
+
+    <div id="fcf-form">
+    <h1 class="fcf-h3">Contact Me</h1>
+
+    <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php">
+        
+        <div class="fcf-form-group">
+            <label for="Name" class="fcf-label">Your name</label>
+            <div class="fcf-input-group">
+                <input type="text" id="Name" name="Name" class="fcf-form-control" required>
+            </div>
+        </div>
+
+        <div class="fcf-form-group">
+            <label for="Email" class="fcf-label">Your email address</label>
+            <div class="fcf-input-group">
+                <input type="email" id="Email" name="Email" class="fcf-form-control" required>
+            </div>
+        </div>
+
+        <div class="fcf-form-group">
+            <label for="Message" class="fcf-label">Your message</label>
+            <div class="fcf-input-group">
+                <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
+            </div>
+        </div>
+
+        <div class="fcf-form-group">
+            <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send Message</button>
+        </div>
+
+
+    </form>
+    </div>
+
 </div>
   </body>
   <script src="script.js" ></script> 
